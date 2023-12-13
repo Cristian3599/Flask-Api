@@ -5,9 +5,9 @@ from bson import ObjectId
 app = Flask(__name__)
 
 # Configuración de la conexión a MongoDB Atlas
-mongo_uri = "mongodb://localhost:27017"
+mongo_uri = "mongodb+srv://Cristian3599:DJayts4GVRw9MTTW@proyectointeligentesii.jl6rh6d.mongodb.net/"
 client = MongoClient(mongo_uri)
-db = client["proyecto_inteligentes_II"]
+db = client["ProyectoInteligentesII"]
 
 # Mock data de enlaces a los gráficos pair plot
 graficos_pair_plot = {

@@ -6,9 +6,9 @@ import json
 
 app = Flask(__name__)
 
-mongo_uri = "mongodb://localhost:27017"
+mongo_uri = "mongodb+srv://Cristian3599:DJayts4GVRw9MTTW@proyectointeligentesii.jl6rh6d.mongodb.net/"
 client = MongoClient(mongo_uri)
-db = client["proyecto_inteligentes_II"]
+db = client["ProyectoInteligentesII"]
 
 @app.route('/columns-describe/<dataset_id>', methods=['GET'])
 def get_columns_description(dataset_id):
@@ -36,4 +36,4 @@ def get_columns_description(dataset_id):
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(port=5003, debug=True) 
+    app.run(port=5003, debug=True)

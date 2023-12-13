@@ -8,9 +8,9 @@ import json
 app = Flask(__name__)
 
 # Configuración de la conexión a MongoDB Atlas
-mongo_uri = "mongodb://localhost:27017"
+mongo_uri = "mongodb+srv://Cristian3599:DJayts4GVRw9MTTW@proyectointeligentesii.jl6rh6d.mongodb.net/"
 client = MongoClient(mongo_uri)
-db = client["proyecto_inteligentes_II"]
+db = client["ProyectoInteligentesII"]
 
 @app.route('/imputation/<dataset_id>/type/<number_type>', methods=['POST'])
 def impute_data(dataset_id, number_type):

@@ -8,9 +8,9 @@ import pandas as pd
 app = Flask(__name__)
 
 # Configuración de la conexión a MongoDB Atlas
-mongo_uri = "mongodb://localhost:27017"
+mongo_uri = "mongodb+srv://Cristian3599:DJayts4GVRw9MTTW@proyectointeligentesii.jl6rh6d.mongodb.net/"
 client = MongoClient(mongo_uri)
-db = client["proyecto_inteligentes_II"]
+db = client["ProyectoInteligentesII"]
 
 def convert_strings_to_numeric(data):
     """Función para convertir cadenas numéricas a valores numéricos."""
